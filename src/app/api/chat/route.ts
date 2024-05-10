@@ -8,12 +8,12 @@ import { eq } from "drizzle-orm";
 import { NextResponse } from "next/server";
 
 // Model name
-const MODEL_NAME = "mistral-7b-instruct-v0.1.Q5_K_M.gguf";
+const MODEL_NAME = "mistral-7b-instruct-v0.1.Q2_K.gguf";
 
 // Get the models directory
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const modelsDirectory = path.join(__dirname, "../models");
+const modelsDirectory = path.join(__dirname, "../../../../models");
 const modelsPath = path.join(modelsDirectory, MODEL_NAME);
 
 // Initialize Mistral LLM
