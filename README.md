@@ -36,10 +36,51 @@
 
 1. **Clone the Repository**: `git clone https://github.com/your-username/llm-chat.git`
 2. **Install Dependencies**: `cd llm-chat` then `npm install` or `yarn install`
-3. **Set Up Environment Variables**: Create a `.env.local` file and add the following environment variables:
-   - `DATABASE_URL_NEON`: URL for connecting to the PostgreSQL database.
-   - `PINECONE_API_KEY`: API key for accessing the Pinecone DB API.
-   - `MISTRAL_API_KEY`: API key for accessing the Mistral LLM API.
+
+### Download LLM
+
+1. Download the Mistral LLM (.gguf) model file from [Hugging Face Model Hub](https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/tree/main).
+   
+2. Create a `models` folder in the root directory of your project if it doesn't already exist.
+
+3. Move the downloaded Mistral LLM model file (.gguf) to the `models` folder.
+
+Your project structure should look like this:
+
+```
+llm-chat/
+│
+├── models/
+│   └── mistral-7b-instruct-v0.1.Q2_K.gguf (file that you download from the link version can be differnet)
+│
+├── components/
+│   └── ...
+│
+├── ...
+│
+├── README.md
+└── package.json
+```
+Make sure to replace the value of `MODEL_NAME` variable with file name (eg. `MODEL_NAME="mistral-7b-instruct-v0.1.Q2_K.gguf"`)
+
+4. Ensure you have Node.js and npm installed on your machine.
+
+5. Install project dependencies using npm:
+
+```bash
+npm install
+```
+
+6. Set up your environment variables by creating a `.env` file in the root directory of your project. Define the following environment variables:
+
+```env
+DATABASE_URL_NEON=your_database_url
+PINECONE_API_KEY=your_pinecone_api_key
+MISTRAL_MODEL_PATH=./models/mistral-7B.gguf
+```
+
+Replace `your_database_url` with your PostgreSQL database URL, and `your_pinecone_api_key` with your Pinecone API key.
+
 4. **Run the Application**: `npm run dev` or `yarn dev`
 5. **Access the Application**: Open your browser and navigate to `http://localhost:3000`
 
