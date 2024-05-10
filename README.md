@@ -63,9 +63,9 @@ llm-chat/
 ```
 Make sure to replace the value of `MODEL_NAME` variable with file name (eg. `MODEL_NAME="mistral-7b-instruct-v0.1.Q2_K.gguf"`)
 
-4. Ensure you have Node.js and npm installed on your machine.
+3. Ensure you have Node.js and npm installed on your machine.
 
-5. Install project dependencies using npm:
+4. Install project dependencies using npm:
 
 ```bash
 npm install
