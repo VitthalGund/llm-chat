@@ -75,8 +75,7 @@ npm install
 
 ```env
 DATABASE_URL_NEON=your_database_url
-PINECONE_API_KEY=your_pinecone_api_key
-MISTRAL_MODEL_PATH=./models/mistral-7B.gguf
+PINECONE_API_KEY=your_pinecone_api_ke
 ```
 
 Replace `your_database_url` with your PostgreSQL database URL, and `your_pinecone_api_key` with your Pinecone API key.
