@@ -34,7 +34,7 @@
 
 ## Setup 🛠️
 
-1. **Clone the Repository**: `git clone https://github.com/your-username/llm-chat.git`
+1. **Clone the Repository**: `git clone https://github.com/VitthalGund/llm-chat.git`
 2. **Install Dependencies**: `cd llm-chat` then `npm install` or `yarn install`
 
 ### Download LLM
